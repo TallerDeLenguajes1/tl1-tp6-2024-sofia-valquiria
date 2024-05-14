@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+int num;
+
+Console.WriteLine("Escriba un numero:");
+string cad = Console.ReadLine();
+if(int.TryParse(cad,out num)){
+    Console.Write(num);
+}
